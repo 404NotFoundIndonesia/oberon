@@ -65,5 +65,5 @@
 }
 
 .form-input{
-    @apply transition duration-300 outline-none border p-1 rounded-xl border-black/20 px-2 focus:border-black/50
+    @apply transition duration-300 outline-none border p-1 px-3 rounded-xl border-black/20 px-2 focus:border-black/50
 }
