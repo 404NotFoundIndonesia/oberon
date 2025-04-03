@@ -61,5 +61,9 @@
 }
 
 .btn {
-    @apply transition duration-300 bg-blue-600 hover:bg-blue-700 p-1 px-3 font-medium cursor-pointer text-white rounded-xl inline-block shadow-lg hover:shadow-blue-600/30
+    @apply transition duration-300 bg-blue-600 inline-flex items-center gap-1 hover:bg-blue-700 p-1 px-3 font-medium cursor-pointer text-white rounded-xl shadow-lg hover:shadow-blue-600/30
+}
+
+.form-input{
+    @apply transition duration-300 outline-none border p-1 rounded-xl border-black/20 px-2 focus:border-black/50
 }
