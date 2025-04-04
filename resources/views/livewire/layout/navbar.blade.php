@@ -3,7 +3,10 @@
         <a href="/" class="text-lg font-medium">Oberon</a>
         <ul class="flex space-x-4">
             @auth
-            <li><a href="/admin" class="nav-item">Admin</a></li>
+                <li><a href="/dashboard" class="nav-item">Dashboard</a></li>
+                @if (auth()->user()->role === 'admin')
+                    <li><a href="/admin" class="nav-item">Admin</a></li>
+                @endif
             @else
             <li><a href="/" class="nav-item">Home</a></li>
             @endauth
