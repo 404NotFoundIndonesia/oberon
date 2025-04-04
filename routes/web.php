@@ -8,10 +8,12 @@ use App\Livewire\Auth\Login;
 use App\Livewire\Page\Dashboard;
 use App\Livewire\Page\Landing;
 use App\Livewire\Page\Admin;
+use App\Livewire\Page\Admin\User\ViewUser;
 
 Route::get('/', Landing::class);
 Route::get('/counter', Counter::class);
 Route::get('/login', Login::class)->name('login')->middleware('guest');
 Route::get('/admin', Admin::class)->middleware('auth');
+Route::get('/admin/user', ViewUser::class)->name('admin-view-user')->middleware('auth');
 Route::get('/dashboard', Dashboard::class)->middleware('auth');
 Route::post('/logout', [LogoutController::class, 'logout'])->middleware('auth')->name('logout');
